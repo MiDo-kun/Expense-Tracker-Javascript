@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --border-color: rgb(153, 153, 153);
+   --theader-color: #333333;
+   --silver-gray: #D3D3D3;
+   font-size: 15px;
+}
+
+html, body {
+   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.container {
+   margin: 0 auto;
+   width: 80%;
+}
+
+h1 {
+   font-size: 3.5rem;
+   text-align: center;
+   padding: 3% 0;
+}
+
+.user-input {
+   margin-bottom: 3%;
+}
+
+input {
+   outline: 0;
+   font-family: 'Poppins', Arial;
+   border-radius: 5px;
+   padding: 1rem;
+   font-size: 1rem;
+   border: 1px solid var(--border-color);
+}
+
+#description {
+   width: 60%;
+}
+
+#amount {
+   width: 20%;
+}
+
+#date {
+   width: 19%;
+}
+
+#submit {
+   display: block;
+   font-family: 'Poppins', Arial;
+   font-size: 1rem;
+   border: 1px solid #595959;
+   border-radius: 5px;
+   margin: 1em auto;
+   padding: .5em 2em;
+   cursor: pointer;
+}
+
+#submit:hover {
+   color: #ffffff;
+   transition: 1s all ease-in;
+   background-color: rgb(61, 61, 61);
+}
+
+table {
+   font-size: 1rem;
+   margin-bottom: 10%;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+th, tr, td {
+   border: 1px solid var(--border-color);
+}
+
+th {
+   padding: .8em;
+   font-size: 1.2rem;
+   color: #f1f1f1;
+   background-color: var(--theader-color);
+}
+
+tr:nth-child(even) {
+   background-color: var(--silver-gray);
+}
+
+td:nth-child(4),
+td:nth-child(5) {
+   font-size: 1rem;
+   text-align: center;
+   cursor: pointer;
+}
+
+td {
+   padding: .8em;
+}
