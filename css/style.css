@@ -28,6 +28,11 @@ h1 {
    padding: 3% 0;
 }
 
+i {
+   font-size: 1rem;
+   cursor: pointer;
+}
+
 .user-input {
    margin-bottom: 3%;
 }
@@ -64,6 +69,12 @@ input {
    cursor: pointer;
 }
 
+#submit:disabled {
+   opacity: 0.5;
+   background-color: rgb(61, 61, 61);
+   color: #ffffff;
+}
+
 #submit:hover {
    color: #ffffff;
    transition: 1s all ease-in;
@@ -94,9 +105,7 @@ tr:nth-child(even) {
 
 td:nth-child(4),
 td:nth-child(5) {
-   font-size: 1rem;
    text-align: center;
-   cursor: pointer;
 }
 
 td {
