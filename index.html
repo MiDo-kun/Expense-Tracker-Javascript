@@ -14,9 +14,9 @@
          <h1>Expense App</h1>
          <div class="user-input">
             <input type="text" name="description" id="description" placeholder="Description">
-            <input type="text" name="" id="amount" placeholder="Amount">
+            <input type="number" name="" id="amount" placeholder="Amount">
             <input type="date" name="" id="date">
-            <button type="submit" disabled="disabled" id="submit">Confirm</button>
+            <button type="submit" id="submit">Confirm</button>
          </div>
          <table>
             <thead>
@@ -28,16 +28,25 @@
                   <th width="10%">Delete</th>
                </tr>
             </thead>
-            <tbody>
-               <tr>
+            <tbody class="data">
+               <!-- <tr>
                   <td>Alfreds Futterkiste</td>
                   <td>Maria Anders</td>
                   <td>Germany</td>
                   <td><i class="fa-solid fa-pencil edit"></i></td>
                   <td><i class="fa-solid fa-trash-can delete"></i></td>
-               </tr>
+               </tr> -->
             </tbody>
          </table>
+      </div>
+      <div class="carousel">
+         <div class="user-edit">
+            <span id="close"><i class="fa-solid fa-close"></i></span>   
+            <input type="text" name="description" id="edit_description" placeholder="Description">
+            <input type="number" name="" id="edit_amount" placeholder="Amount">
+            <input type="date" name="" id="edit_date">
+            <button type="submit" id="submit">Edit</button>
+         </div>         
       </div>
       <script src="script/expensive.js"></script>
    </body>
