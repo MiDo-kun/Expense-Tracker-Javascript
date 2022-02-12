@@ -17,7 +17,7 @@ const tbody = document.querySelector('.data');
 // Modal 
 const closeEdit = document.querySelector('#close');
 const carousel = document.querySelector('.carousel');
-const editUser = document.querySelector('.user-edit #submit');
+const editSubmit = document.querySelector('.user-edit #submit');
 const editDescription = document.querySelector('#edit_description');
 const editAmount = document.querySelector('#edit_amount');
 const editDate = document.querySelector('#edit_date');
@@ -82,11 +82,24 @@ function edit(index) {
    });
 
    let data = localStorage.getItem('User-Data');
+   
+   // Send current data to the modal
    userData = JSON.parse(data).reverse()[index];
-
    editDescription.value = userData.split(',')[0];
    editAmount.value = userData.split(',')[1];
    editDate.value = userData.split(',')[2];
+
+   editSubmit.addEventListener('click', () => {
+      editUserData = JSON.parse(data);
+      let editElement = editDescription.value + "," + editAmount.value + "," + editDate.value;
+      editUserData.reverse().filter(() => {
+         return editUserData[index] = editElement;
+      });
+      localStorage.setItem('User-Data', JSON.stringify(editUserData.reverse()));
+
+      carousel.style.display = 'none';
+      loadData();
+   });
 }
 
 // LOAD DATA
