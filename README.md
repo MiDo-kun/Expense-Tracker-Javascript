@@ -1,6 +1,8 @@
 # Expense Tracker - Javascript 
 
-This project is a blog site web application that focuses on providing visitors with simple yet informative blog posts. The front-end design is minimalist and prioritizes simplicity and ease of use, allowing users to access and read blogs quickly and efficiently. The application was built using Vite, a fast and efficient build tool for modern web development, along with React, a popular JavaScript library for building user interfaces. The Tailwind CSS framework was also used to ensure a streamlined development process.
+The Expense Tracker is a web application that allows users to keep track of their expenses and manage their spending habits efficiently. It provides a simple and intuitive interface that enables users to add, view, edit and delete expenses easily.
+
+The application is built using JavaScript, HTML, and CSS, and it provides a seamless user experience across all devices. With the Expense Tracker, users can easily keep track of their expenses and gain insights into their spending patterns.
 
 ![Preview](https://lh3.googleusercontent.com/pw/AJFCJaVlcDtTMgrRrnnKq-pZdC4hkxNuk4dZjIfK4IDbdeBkbNG3gZSD5MszSr2srjuF3Ra7vcAAnFU-hhlf0Z25cd5dHexremmiu8LctJJkfUXOqgBj127XTJ75sd2dKMBPD7ruOn90jKhoRXW3E0-gyjxY=w1365-h635-s-no)
 
@@ -8,30 +10,17 @@ You can view the live website [here](https://mido-kun.github.io/Expense-Tracker-
 
 ## Main Objective/s
 
-> The goals/objectives/motivation of the project here.
-
-e.g.
-
-The main objectives of this project were to:
-
-Document my learning journey and share knowledge with readers by providing informative and direct-to-the-point information. Through this blog site web application, I aim to help others learn new concepts and stay updated on relevant topics in a simple and efficient manner. Additionally, this project allows me to practice my development skills and expand my knowledge in web development.
+The main objective of this project was to provide users with a simple and intuitive interface for managing their expenses efficiently. To achieve this objective, the project focuses on implementing basic CRUD (Create, Read, Update, Delete) functionality using JavaScript.
 
 ## What I've Learned
 
-> A short list of description on what you've learned in the process of making the project.
+Through this project, I gained valuable knowledge and skills in modern web development using JavaScript and related technologies. Specifically, I learned:
 
-e.g.
+- How to store and retrieve data in the local storage of the browser.
+- How to use JSON objects to parse and stringify data.
+- How to implement basic CRUD functionality in a web application.
 
-Through this project, I gained the following knowledge and skills:
-
-- How to use React hooks such as useState, useEffect, useContext to manage state and side effects, respectively.
-- How to target specific media queries for responsive design in CSS.
-- How to use higher-order functions such as .map() and .filter() to dynamically generate components, improving code reusability and modularity.
-- How to use the React Router Dom library to enable client-side routing and create a seamless user experience.
-- How to store and authenticate cookies for user authentication and security in web development.
-- How to use Prettier and ESLint for code formatting and consistent code conventions on the project.
-
-Overall, this project provided me with a solid foundation in modern web development using React and related technologies. The skills and knowledge I gained will be useful in future web development projects.
+By implementing these features, I gained a solid understanding of how to build a functional and responsive web application using JavaScript. The skills and knowledge I gained from this project will be useful in future web development projects.
 
 ## Contributing
 
