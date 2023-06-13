@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Expense App</title>
-      <link rel="shortcut icon" href="images/" type="image/x-icon">
-      <link href="css/style.css" rel="stylesheet">
-      <link rel="stylesheet" href="fontawesome/css/all.css">
-   </head>
-   <body>
-      <div class="container">
-         <h1>Expense App</h1>
-         <div class="user-input">
-            <input type="text" name="description" id="description" placeholder="Description">
-            <input type="number" name="" id="amount" placeholder="Amount">
-            <input type="date" name="" id="date">
-            <button type="submit" id="submit">Confirm</button>
-         </div>
-         <table>
-            <thead>
-               <tr>
-                  <th width="40%">Description</th>
-                  <th width="20%">Amount</th>
-                  <th width="20%">Date</th>
-                  <th width="10%">Edit</th>
-                  <th width="10%">Delete</th>
-               </tr>
-            </thead>
-            <tbody class="data">
-               <!-- <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                  <td><i class="fa-solid fa-pencil edit"></i></td>
-                  <td><i class="fa-solid fa-trash-can delete"></i></td>
-               </tr> -->
-            </tbody>
-         </table>
-      </div>
-      <div class="carousel">
-         <div class="user-edit">
-            <span id="close"><i class="fa-solid fa-close"></i></span>   
-            <input type="text" name="description" id="edit_description" placeholder="Description">
-            <input type="number" name="" id="edit_amount" placeholder="Amount">
-            <input type="date" name="" id="edit_date">
-            <button type="submit" id="submit">Edit</button>
-         </div>         
-      </div>
-      <script src="script/expensive.js"></script>
-   </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker App</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/color/48/split-money--v2.png" type="image/x-icon">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Expense App</h1>
+    <div class="user-input">
+      <input type="text" name="description" id="description" placeholder="Description">
+      <input type="number" name="" id="amount" placeholder="Amount">
+      <input type="date" name="" id="date">
+      <button type="submit" id="submit">Confirm</button>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th width="40%">Description</th>
+            <th width="20%">Amount</th>
+            <th width="20%">Date</th>
+            <th width="10%">Edit</th>
+            <th width="10%">Delete</th>
+          </tr>
+        </thead>
+        <tbody class="data">
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td><i class="fa-solid fa-pencil edit"></i></td>
+            <td><i class="fa-solid fa-trash-can delete"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="carousel">
+    <div class="user-edit">
+      <span id="close"><i class="fa-solid fa-close"></i></span>
+      <input type="text" name="description" id="edit_description" placeholder="Description">
+      <input type="number" name="" id="edit_amount" placeholder="Amount">
+      <input type="date" name="" id="edit_date">
+      <button type="submit" id="submit">Edit</button>
+    </div>
+  </div>
+  <script src="script/expensive.js"></script>
+</body>
+
 </html>
